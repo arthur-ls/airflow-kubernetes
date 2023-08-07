@@ -8,6 +8,6 @@ spec:
   type: ClusterIP
   ports:
   - name: flaskserver-service
-    port: 80
-    targetPort: 8000
+    port: 5000
+    targetPort: 5000
     protocol: TCP

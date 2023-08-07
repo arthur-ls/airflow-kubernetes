@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
     - name: goserver
-      image: "arthurlimadossantos/flask-kubernetes:v6.1"
+      image: "arthurlimadossantos/flask-kubernetes:v6.2"
