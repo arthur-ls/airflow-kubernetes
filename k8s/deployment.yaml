@@ -28,7 +28,7 @@ spec:
             - mountPath: "/app/myfamily"
               name: config
               readOnly: true
-
+      volumes:
         - name: config
           configMap:
             name: configmap-family
