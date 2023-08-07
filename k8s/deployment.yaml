@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flaskserver
-          image: "arthurlimadossantos/flask-kubernetes:v6.5"
+          image: "arthurlimadossantos/flask-kubernetes:v6.6"
           
           envFrom:
             - configMapRef:
