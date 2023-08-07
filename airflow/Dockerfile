@@ -4,7 +4,6 @@ USER root
 RUN mkdir -p ${AIRFLOW_HOME} && chown -R airflow: ${AIRFLOW_HOME}
 USER airflow
 RUN airflow db init
-RUN sudo apt-get install vim
 RUN echo "[core]" > ${AIRFLOW_HOME}/airflow.cfg && \
     echo "airflow_home = ${AIRFLOW_HOME}" >> ${AIRFLOW_HOME}/airflow.cfg && \
     echo "executor = LocalExecutor" >> ${AIRFLOW_HOME}/airflow.cfg && \
