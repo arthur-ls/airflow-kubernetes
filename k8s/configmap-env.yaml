@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: flaskserver-env
 data:
-  NAME: "Wesley"
-  AGE: "36"
+  NAME: "Arthur"
+  AGE: "25"
