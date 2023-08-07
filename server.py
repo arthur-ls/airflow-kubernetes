@@ -1,6 +1,9 @@
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
 from flask import Flask
 import os
+
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -17,8 +20,8 @@ def configmap():
     f = open("/app/myfamily/family.txt", "r")
     return "My Family: {}.".format(f.read())
 
-@app.route("/healthz")
 createdat = datetime.now()
+@app.route("/healthz")
 def healthz():
     duration = (datetime.now() - createdat).total_seconds()
     if duration < 10:
